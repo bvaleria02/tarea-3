@@ -1,18 +1,19 @@
-/*var usuarios = {
-                  "nombre"    : "John";
-                  "apellido"  : "Wick";
-                  "edad"      : 56;
-                  "sexo"      : true;
-                }
-*/
-var arreglo = [2, 56, 123, 23, 34];
-var si = 0;
+var menu_status = 0;
+var operationToggle = 0;
 
-si = saludar("Juan");
-si = saludar("Pancho");
-alert("Tarea completada");
+document.querySelector(".header_button_1").addEventListener("click", () => {
+    if (!operationToggle)toggleMenu();
+    });
+document.querySelector("#lateral_back").addEventListener("click", () => {
+    toggleMenu();
+    });
+document.querySelector("#darkness_fg").addEventListener("click", () => {
+    if(menu_status) toggleMenu();
+    });
 
-function saludar(nombre) {
-  document.write("Hola ", nombre);
-  return 26;
-};
+function toggleMenu (){
+        document.querySelector(".article_main").classList.toggle("article_blur");
+        document.querySelector(".dark_visibility").classList.toggle("dark_visibility-show");
+        document.querySelector(".lateral_visibility").classList.toggle("lateral_visibility-show");
+        menu_status = menu_status ^ 0x1;
+        };
