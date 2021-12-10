@@ -1,28 +1,125 @@
 :root{
-    --color-ts-1: #5c62cf80;
-
-
+    --color-ts-1: #ccceff;
+    --color-ts-2: #5c62cf;
+    --color-ts-3: #8489dc;
+    --color-ts-4: #51559a;
 }
+
+
+.strokeline{
+  position: fixed;
+  z-index: 0;
+}
+/*
+#form_guide-1-1{
+  transition: width 4s ease;
+  background-color: var(--color-5);
+  width: 5%; height: 0.625em;
+  top: 16em; left: 34em;
+}
+
+#form_guide-2-1{
+  transition: width 4s ease;
+  background-color: var(--color-5);
+  width: 2.5%; height: 0.625em;
+  top: 39em; left: 34em;
+}
+
+#form_guide-2-2{
+  transition: width 4s ease;
+  background-color: var(--color-5);
+  width: 0.625em; height: 23em;
+  top: 16.625em; left: 36.375em;
+}
+
+#form_guide-3-1{
+  transition: width 4s ease;
+  background-color: var(--color-5);
+  width: 10%; height: 0.625em;
+  top: 18em; left: 57em;
+  opacity: 25%;
+}
+
+#form_guide-3-2{
+  transition: width 4s ease;
+  background-color: var(--color-5);
+  width: 10%; height: 0.625em;
+  top: 32em; left: 57em;
+  opacity: 25%;
+}
+
+
+
+*/
+article form svg{
+  position: fixed;
+  z-index: 1;
+  background-color: #00000000;
+  transition: background-color 0.25s ease-in;
+}
+
+#form_bg-1{
+  background-color: #00000000;
+  position: fixed;
+  top: 8.2em; left: 5.5%;
+  width: 25em;
+  height: 24.5em;
+  transition: background-color 0.75s ease-in;
+  background-color: var(--color-ts-3);
+}
+
+#form_bg-2{
+  background-color: #00000000;
+  position: fixed;
+  top:33.2em; left: 5.5%;
+  width: 25em;
+  height: 6em;
+  transition: background-color 1s ease-in;
+  background-color: var(--color-ts-3);
+}
+#form_bg-3{
+  position: fixed;
+  top: 9.5em; left: 40%;
+  width: 16%;
+  height: 31em;
+  transition: background-color 1.25s ease-in;
+  background-color: var(--color-ts-3);
+}
+
+#form_bg-4{
+  background-color: #00000000;
+  position: fixed;
+  top: 8.2em; right: 7.2em;
+  width: 30%;
+  height: 32.75em;
+  transition: background-color 1.5s ease-in;
+  background-color: var(--color-ts-3);
+}
+
 
 #form_input-1{
   position: fixed;
-  width: 24%;
-  height: 24em;
+  width: 24em;
+  min-width: 24em;
+  max-width: 2em;
+  height: 20em;
+  min-height: 20em;
+  max-height: 20em;
   z-index: 5;
-  top: 12em; left: 8em;
+  top: 12em; left: 6%;
   font-family: var(--font-2);
   border-width: 5px;
-  border-color: var(--color-1);
-  background-color: var(--cplor-ts-1);
+  border-color: var(--color-ts-2);
+  background-color: white;
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 #form_input-2{
   position: fixed;
-  width: 20%;
+  width: 20em;
   height: 3em;
   z-index: 5;
-  top: 48em; left: 12em;
+  top: 43em; left: 12em;
   resize: none;
   font-family: var(--font-2);
   border-width: 2px;
@@ -35,7 +132,7 @@
   width: 12%;
   height: 3em;
   z-index: 5;
-  top: 16em; left: 50em;
+  top: 16em; left: 42%;
   font-family: var(--font-2);
   border-width: 2px;
   border-color: var(--color-1);
@@ -48,7 +145,7 @@
   width: 12%;
   height: 3em;
   z-index: 5;
-  top: 28em; left: 50em;
+  top: 26em; left: 42%;
   font-family: var(--font-2);
   border-width: 2px;
   border-color: var(--color-1);
@@ -59,7 +156,7 @@
   width: 12%;
   height: 3em;
   z-index: 5;
-  top: 40em; left: 50em;
+  top: 40em; left: 42%;
   font-family: var(--font-2);
   border-width: 3px;
   border-color: var(--color-1);
@@ -71,9 +168,13 @@
 #form_output-1{
   position: fixed;
   width: 28%;
-  height: 28em;
+  min-width: 28%;
+  max-width: 28%;
+  height: 27em;
+  min-height: 27em;
+  max-height: 27em;
   z-index: 5;
-  top: 12em; right: 8em;
+  top: 11em; right: 8em;
   resize: none;
   background-color: black;
   color: white;
@@ -90,9 +191,9 @@
   font-size: 150%;
   z-index: 3;
   color: black;
-  top: 6em; left: 9em;
-  color: var(--color-5);
-  /* text-shadow: 2px 2px var(--color-4); */
+  top: 6em; left: 7em;
+  color: var(--color-ts-1);
+  text-shadow: 2px 2px var(--color-ts-2);
 }
 
 #article_label-2{
@@ -101,21 +202,20 @@
   font-size: 150%;
   z-index: 3;
   color: black;
-  top: 25em; left: 9em;
-  color: var(--color-5);
-  /* text-shadow: 2px 2px var(--color-4); */
-
+  top: 22em; left: 7.5em;
+  color: var(--color-ts-1);
+  text-shadow: 2px 2px var(--color-ts-2);
 }
+
 #article_label-3{
   position: fixed;
   font-family: var(--font-1);
   font-size: 150%;
   z-index: 3;
   color: black;
-  top: 7em; left: 28em;
-  color: var(--color-5);
-  /* text-shadow: 2px 2px var(--color-4); */
-
+  top: 7em; left: 41.5%;
+  color: var(--color-ts-1);
+  text-shadow: 2px 2px var(--color-ts-2);
 }
 #article_label-4{
   position: fixed;
@@ -123,10 +223,9 @@
   font-size: 150%;
   z-index: 3;
   color: black;
-  top: 13.6em; left: 28.5em;
-  color: var(--color-5);
-  /* text-shadow: 2px 2px var(--color-4); */
-
+  top: 12.5em; left: 42.5%;
+  color: var(--color-ts-1);
+  text-shadow: 2px 2px var(--color-ts-2);
 }
 #article_label-5{
   position: fixed;
@@ -134,19 +233,11 @@
   font-size: 150%;
   z-index: 3;
   color: black;
-  top: 6em; right: 20em;
-  color: var(--color-5);
-  /* text-shadow: 2px 2px var(--color-4); */
-
+  top: 5.5em; right: 30%;
+  color: var(--color-ts-1);
+  text-shadow: 2px 2px var(--color-ts-2);
 }
 
-#boric{
-  position: fixed;
-  left: 10em;
-  top: 13em;
-  width: 300px;
-    z-index: 0;
-}
 
 .wait_overlay{
     z-index: 5;
@@ -158,6 +249,7 @@
     transition: opacity 0.5s linear;
     opacity: 0%;
     transform: translateY(100%);
+    top: 0px; left: 0px;
 }
 
 .wait_main{
@@ -177,7 +269,6 @@
   border-width: 8px;
   z-index: 8;
   left: 29.6%; top: 39.2%;
-  /* border-color: var(--color-1); */
 }
 
 #wait_frame-2{
@@ -189,14 +280,12 @@
   border-width: 8px;
   z-index: 8;
   left: 30%; top: 40%;
-  /* border-color: var(--color-1); */
 }
 
 #wait_text{
   position: fixed;
   z-index: 8;
   font-family: var(--font-2);
-  /* width: 100% */
   font-size: 2.2em;
   color: var(--color-2);
   left: 34%; top: 57%;
@@ -212,5 +301,5 @@
 
 .wait_frame-show{
   position: fixed;
-  transform: translateX(100px);
+  transform: translateY(-200px);
 }
