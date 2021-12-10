@@ -17,10 +17,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="stylesheet/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="stylesheet/base.css">
         <link rel="stylesheet" href="stylesheet/test.css">
 
-        <title>JavaScript Página</title>
+        <title>Prueba - Busca Palabras</title>
     </head>
     <body>
         <header>
@@ -31,7 +35,7 @@
             <rect><rect/>
           </svg>
           <div>
-            <button id="header_button" class="header_button_1">=</button>
+            <img src="media/svg/menu.svg" id="header_button" class="header_button_1"></img>
             <h1 id="header_title"
                 class="header_text">Busca Palabras</h1>
             <table>
@@ -61,16 +65,22 @@
                id="footer_sq4">
               <rect><rect/>
             </svg>
+          <p>Copyright 2021©</p>
         </footer>
 
         <svg id="darkness_fg" class="dark_visibility">
             <rect><rect/>
           </svg>
+
         <article class="article_main">
             <form>
+              <svg id="form_bg-1"> <rect><rect/> </svg>
               <textarea maxlength="8192" id="form_input-1">/* Ingrese acá las palabras a filtrar*/</textarea>
+              <svg id="form_bg-2"> <rect><rect/> </svg>
               <input type="text" maxlength="24" id="form_input-2">
+              <svg id="form_bg-3"> <rect><rect/> </svg>
               <input type="number" min="1" max="20" maxlength="2" id="form_input-3">
+              <svg id="form_bg-4"> <rect><rect/> </svg>
               <select name="Filtro" id="form_input-4">
                   <option value="1">Sin filtro</option>
                   <option value="2">Menor que</option>
@@ -82,14 +92,24 @@
               </select>
 
           </form>
+          <svg id="form_bg-5"> <rect><rect/> </svg>
           <button id="form_input-5">Procesar</button>
           <!-- <output type="text" name="aaaa" id="form_output-1">aaaa</output> -->
+          <svg id="form_bg-6"> <rect><rect/> </svg>
           <textarea disabled id="form_output-1">aaaa</textarea>
+          <a href="txt/output.txt" download id="form_output-2">Ver como texto</a>
+
           <p id="article_label-1">Ingrese aquí sus palabras</p>
           <p id="article_label-2">Ingrese las letras a buscar</p>
           <p id="article_label-3">Longitud de la palabra</p>
           <p id="article_label-4">Regla de búsqueda</p>
           <p id="article_label-5">Resultado</p>
+
+          <svg id="form_guide-1-1" class="strokeline"> <rect><rect/> </svg>
+          <svg id="form_guide-2-1" class="strokeline"> <rect><rect/> </svg>
+          <svg id="form_guide-2-2" class="strokeline"> <rect><rect/> </svg>
+          <svg id="form_guide-3-1" class="strokeline"> <rect><rect/> </svg>
+          <svg id="form_guide-3-2" class="strokeline"> <rect><rect/> </svg>
 
         </article>
 
@@ -97,27 +117,36 @@
           <svg id="lateral_frame">
               <rect><rect/>
             </svg>
-          <ul id="lateral_list">
-              <li class="lateral_list_row"><form><p class="lateral_link" id="lateral_back"><</p></li>
-              <li class="lateral_list_nl"><p class="lateral_link"> </li>
-
-              <li class="lateral_list_row"><form action="index.html" ><input type="submit" value="Inicio" class="lateral_link este_jode_mucho" /></form></li>
-
-              <li class="lateral_list_row"><form action="index.html" ><input type="submit" value="Inicio" class="lateral_link" /></form></li>
-              <li class="lateral_list_row"><form action="whatis.html" ><input type="submit" value="¿Qué es?" class="lateral_link" /></form></li>
-              <li class="lateral_list_row"><form action="test.html" ><input type="submit" value="Prueba" class="lateral_link" /></form></li>
-                  <li class="lateral_list_nl"><p class="lateral_link"> </li>
-              <li class="lateral_list_row"><form action="download.html" ><input type="submit" value="Descarga" class="lateral_link" /></form></li>
-              <li class="lateral_list_row"><form action="install.html" ><input type="submit" value="Instalación" class="lateral_link" /></form></li>
-                  <li class="lateral_list_nl"><p class="lateral_link"> </li>
-              <li class="lateral_list_row"><form action="https://github.com/bvaleria02/tarea-3" ><input type="submit" value="Github" class="lateral_link" /></form></li>
-          </table>
+            <div class="lateral-grid-container">
+                <div></form></div>
+                <div><form><p id="lateral_back" title="Volver a la página"><</p></form></div>
+                <div><p></p></div>
+                <div><p></p></div>
+                <div><img src="media/svg/home.svg"></div>
+                <div><form action="index.html"><input type="submit" value="Inicio" title="Ir a la página principal"></form></div>
+                <div><img src="media/svg/whatis.svg"></div>
+                <div><form action="whatis.html"><input type="submit" value="¿Qué es esto?" title="Información sobre este programa"></form></div>
+                <div><p></p></div>
+                <div><p></p></div>
+                <div><img src="media/svg/console.svg"></div>
+                <div><form action="test.html"><input type="submit" value="Prueba" title="Pequeña muestra de su función"></form></div>
+                <div><p></p></div>
+                <div><p></p></div>
+                <div><img src="media/svg/download.svg"></div>
+                <div><form action="download.html"><input type="submit" value="Descarga" title="Enlaces de descarga"></form></div>
+                <div><img src="media/svg/install.svg"></div>
+                <div><form action="install.html"><input type="submit" value="Instalación" title="Instalación en su equipo"></form></div>
+                <div><p></p></div>
+                <div><p></p></div>
+                <div><img src="media/svg/github.svg"></div>
+                <div><form action="https://github.com/bvaleria02/tarea-3"><input type="submit" value="Github" title="Repositorio de Github"></form></div>
+            </div>
             <div id="lateral_bottom_text">
               <p id="lateral_text_1">Copyright 2021<p>
               <p id="lateral_text_2">Todos los derechos reservados</p>
           </div>
         </nav>
-        <!-- <img src="media/piñera.jpg" id="boric" width="200px"> -->
+        <!-- <img src="media/boric.png" id="boric" width="200px"> -->
 
         <svg class="wait_overlay">
             <rect><rect/>
@@ -131,8 +160,8 @@
               </svg>
           <p id="wait_text">Espere un momento</p>
         </div>
-        <script src="app.js"></script>
-        <script src="separador.js"></script>
+        <script src="javascript/lateral.js"></script>
+        <script src="javascript/separador.js"></script>
         <!-- <img src="media/ussr.png" id="monkee"> -->
 
     </body>

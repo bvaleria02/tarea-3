@@ -26,3 +26,9 @@ all:
 	mv *.o bin/
 	echo Traslacion efectuada
 	echo Tarea 4/4: Finalizar
+
+init:
+	rm -r bin
+	rm main
+	mkdir bin
+	echo Inicialización finalizada
