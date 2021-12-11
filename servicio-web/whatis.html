@@ -22,6 +22,7 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="stylesheet/base.css">
+        <link rel="stylesheet" href="stylesheet/whatis.css">
 
         <title>¿Qué es esto? - Busca Palabras</title>
     </head>
@@ -72,7 +73,99 @@
       </svg>
 
         <article class="article_main">
+          <div>
+            <div class="article_top">
+                <h2>¿Qué es esto?</h2>
+                <div class="article_table">
+                    <div>
+                        <h3>Base de datos</h3>
+                        <img src="media/svg/database.svg">
+                        <p class="table_normal">Posee un registro personalizable por el usuario.</p>
+                        <p class="desplegable_menu" id="table_button-1"><b>Base de datos:</b></p>
+                        <textarea disabled class="disabled" id="table_disabled-1">Dentro de un archivo en el directorio del programa, se suministran todas y cada unas de las palabras en español, las cuales pueden ser ampliadas por el usuario, como también puede amoldar a gusto de este. Las instrucciones para modificar la base de datos puede ser encontradas en la sección de instalación.</textarea>
+                        <a href="install.html" class="table_link" id="table_link-1">Ir a instalación</a>
+                    </div>
+                    <div>
+                        <h3>Buscador</h3>
+                        <img src="media/svg/browser.svg">
+                        <p class="table_normal">Con una entrada dada, filtra los resultados</p>
+                        <p class="desplegable_menu" id="table_button-2"><b>Buscador de palabras:</b></p>
+                        <textarea disabled class="disabled" id="table_disabled-2">Provee de cierto grado de libertad para que el usuario pueda encontrar aquella palabra deseada, de manera rápida y sencilla. Podrá tanto ingresar las letras que conforman su palabra, así como la longitud de esta, así como la opción para decidir sobre la longitud, sea aquellas inferiores o superiores a la ingresada, entre otras.</textarea>
+                        <a href="test.html" class="table_link" id="table_link-2">Ir a prueba</a>
+                    </div>
+                    <div>
+                        <h3>Separador</h3>
+                        <img src="media/svg/save.svg">
+                        <p class="table_normal">Provee la opción para exportar a un archivo el resultado</p>
+                        <p class="desplegable_menu" id="table_button-3"><b>Separador:</b></p>
+                        <textarea disabled class="disabled" id="table_disabled-3">Ofrece un simple pero efectivo método con el cual poder exportar el resultado obtenido a un documento de texto plano, el cual imprimirá en este una tras otra cada salida, separada con un salto de línea.</textarea>
+                    </div>
+                </div>
+                <h3 id="table_bottom-text">Todo en un mismo programa</h3>
+            </div>
 
+            <div class="article-1">
+                <h2>¿Cómo surgió esto?</h2>
+                <div>
+                    <ul>
+                        <li><h3>La idea</h3></li>
+                        <li><p>El programa es un buscador de palabras, nacido a raíz e inspiración del juego “Words of Wonders”, en el cual con una serie de letras, el usuario debe formar palabras.</p></li>
+                        <li><p>Hemos decidido hacer el proceso inverso de aquel juego, en vez de que el usuario deba ingresar una palabra, este le ofrecerá todos las palabras que podrían ser introducidas.</p></li>
+                    </ul>
+                    <div class="wow">
+                        <div>
+                            <p id="square-1"> </p>
+                            <p id="square-2"> </p>
+                            <p id="square-3"> </p>
+                            <p id="square-4"> </p>
+                            <p id="square-5"> </p>
+                            <p id="square-6"> </p>
+                            <p id="square-7"> </p>
+                            <p id="square-8"> </p>
+                            <p id="square-9"> </p>
+                            <p id="square-10"> </p>
+                            <p id="square-11"> </p>
+                            <p id="square-12"> </p>
+                            <p id="square-13"> </p>
+                            <p id="square-14"> </p>
+                            <p id="square-15"> </p>
+                            <p id="square-16"> </p>
+                            <p id="square-17"> </p>
+                            <p id="square-18"> </p>
+                            <p id="square-19"> </p>
+                            <p id="square-20"> </p>
+                            <p id="square-21"> </p>
+                            <p id="square-22"> </p>
+                            <p id="square-23"> </p>
+                            <p id="square-24"> </p>
+                            <p id="square-25"> </p>
+                            <p id="square-26"> </p>
+                            <p id="square-27"> </p>
+                            <p id="square-28"> </p>
+                            <p id="square-29"> </p>
+                        </div>
+                        <div>
+                            <button id="wow-in-1">N</button>
+                            <button id="wow-in-2">L</button>
+                            <button id="wow-in-3">A</button>
+                            <button id="wow-in-4">Borrar</button>
+                            <button id="wow-in-5">B</button>
+                            <button id="wow-in-6">O</button>
+                            <button id="wow-in-7">C</button>
+                            <button id="wow-in-8">Ingresar</button>
+                        </div>
+                        <div>
+                          <textarea id="wow-text" disabled maxlength="6"></textarea>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><h3>El propósito</h3></li>
+                        <li><p>El programa será capaz de, con una entrada del usuario, buscar en su base de datos palabras que contengan aquellas letras, y sean de la longitud dada.</p></li>
+                        <li><p>Para eso, consta de una base de datos, a la cual el usuario accede ingresando las letras que contenga la palabra y la longitud de esta, así como el criterio por el cual buscar</p></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
         </article>
 
 
@@ -110,5 +203,7 @@
           </div>
         </nav>
         <script src="javascript/lateral.js"></script>
+        <script src="javascript/whatis.js"></script>
+        <script src="javascript/wow.js"></script>
     </body>
 </html>
