@@ -23,7 +23,8 @@ all:
 	gcc -o main busquedasPosteriores.o cuadrado.o delay.o entradaLetras.o filtroLongitud.o generarArchivoPalabras.o getch.o imprimirPantalla.o imprimirResultados.o limites.o multipleEleccion.o primeraBusqueda.o segundaPasada.o separarPalabrasPorLetra.o stringLength.o teclado.o totalResultados.o separador.o
 	echo Compilacion terminada
 	echo Tarea 3/4: Mover objetos a /bin
-	mv *.o bin/
+	-mkdir bin
+	-mv *.o bin/
 	mv main ../
 	echo Traslacion efectuada
 	echo Tarea 4/4: Finalizar
