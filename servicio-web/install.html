@@ -21,6 +21,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="stylesheet/install.css">
         <link rel="stylesheet" href="stylesheet/base.css">
 
         <title>Instalación - Busca Palabras</title>
@@ -72,7 +73,142 @@
       </svg>
 
       <article class="article_main">
+            <div class="install_frame">
+                <h2>Instalación</h2>
+                <div class="images-top">
+                  <img id="img-top-1" src="media/boric.png">
+                  <img id="img-top-2" src="media/piñera.jpg">
+                  <img id="img-top-3" src="media/boric.png">
+                  <img id="img-top-4" src="media/boric.png">
+                  <img id="img-top-5" src="media/boric.png">
+                  <img id="img-top-6" src="media/boric.png">
+                </div>
+                <div>
+                    <p id="text-1">Texto que va por debajo</p>
+                    <p class="text_disabled" id="text-d-1">aaa 1</p>
+                    <p class="text_disabled" id="text-d-2">aaa 2</p>
+                    <p class="text_disabled" id="text-d-3">aaa 3</p>
+                    <p class="text_disabled" id="text-d-4">aaa 4</p>
+                    <p class="text_disabled" id="text-d-5">aaa 5</p>
+                    <p class="text_disabled" id="text-d-6">aaa 6</p>
+                </div>
+                <ul class="top_buttons">
+                    <li id="button-1"><button>1</button></li>
+                    <li id="button-2"><button>2</button></li>
+                    <li id="button-3"><button>3</button></li>
+                    <li id="button-4"><button>4</button></li>
+                    <li id="button-5"><button>5</button></li>
+                    <li id="button-6"><button>6</button></li>
+                </ul>
+            </div>
+
+            <div class="articles_sub" id="article-1">
+                <h3><b>Paso 1:</b> Descomprimir el archivo</h3>
+                <div>
+                    <img src="">
+                    <ul class="art-1-ul-1">
+                        <li><p>Nota: esto es solo si se ha descargado directo desde Github</p></li>
+                        <li><p>Descomprima el archivo con algún gestor de fichero como 7zip, WinZip, o el propio que viene por defecto en los sistemas basados en GNU/Linux</p></li>
+                    </ul>
+            </div>
+          </div>
+
+            <div class="articles_sub" id="article-2">
+                <h3><b>Paso 2:</b> Abrir una terminal</h3>
+                <div>
+                    <img src="">
+                    <ul class="art-2-ul-1">
+                        <li><p>Dependiendo el sistema operativo, el método varía.</p></li>
+                        <li><p><b>Windows</b></p></li>
+                        <li><div>
+                                <ul class="art-2-ul-2">
+                                    <li><p>Presione <kbd>Win + R</kbd></p></li>
+                                    <li><p>Ingrese en el cuadro de texto <u>cmd</u></p></li>
+                                    <li><p>Navege hasta la carpeta donde se ubiquen los archivos del programa</p></li>
+                                </ul>
+                            </div></li>
+                        <li><p></p></li>
+                        <li><p><b>Linux</b></p></li>
+                        <li><div>
+                                <ul class="art-2-ul-2">
+                                    <li><p>Presione <kbd>Ctrl + Alt +T</kbd></p></li>
+                                    <li><p>Navege hasta la carpeta donde se ubiquen los archivos del programa</p></li>
+                                </ul>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="articles_sub" id="article-3">
+                <h3><b>Paso 3:</b> Ejecutar el Makefile</h3>
+                <div>
+                    <img src="">
+                    <ul class="art-3-ul-1">
+                        <li><p>Al igual que el paso anterior, es dependiente del sistema operativo en el cual intente ejecutar</p></li>
+                        <li><p><b>Windows</b></p></li>
+                        <li><div>
+                                <ul class="art-2-ul-2">
+                                    <li><p>En la terminal, ingrese <u>cd install-windows</u> y luego <u>make.bat</u></p></li>
+                                </ul>
+                            </div></li>
+                        <li><p></p></li>
+                        <li><p><b>Linux</b></p></li>
+                        <li><div>
+                                <ul class="art-2-ul-2">
+                                    <li><p>En la terminal, ingrese <u>cd install-linux</u> y luego <u>make</u></p></li>
+                                </ul>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="articles_sub" id="article-4">
+                <h3><b>Paso 4:</b> Modificar el fichero con las palabras</h3>
+                <div>
+                    <img src="">
+                    <ul class="art-4-ul-1">
+                        <li><p>Solo tener en cuenta esto si se quiere tener una base de datos distinta a la ofrecida. Si desea solo usarlo para buscar palabras, sáltese hasta el <a href="#article-6">paso 6</a></p></li>
+                        <li><p>Vaya hasta la carpeta "archivos-txt", y abra con un editor de texto el archivo "palabras.txt".</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="articles_sub" id="article-5">
+                <h3><b>Paso 5:</b> Añadir/Quitar definiciones</h3>
+                <div>
+                    <img src="">
+                    <ul class="art-5-ul-1">
+                        <li><p>Si desea deshacerse de las palabras, presione <kbd>Ctrl + A</kbd> y luego <kbd>DEL</kbd>, luego ingrese sus propias entradas, separando por un salto de línea cada una y guarde sus cambios.</p></li>
+                        <li><p>Si solo desea remover o añadir palabras, modifique el documento a voluntad, y guarde los cambios.</p></li>
+                        <li><p>Al terminal, en la terminal ejecute <u>cd ..</u>.</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="articles_sub" id="article-6">
+                <h3><b>Paso 6:</b> Ejecute el programa</h3>
+                <div>
+                    <img src="">
+                    <ul class="art-6-ul-1">
+                        <li><p>En la carpeta principal, ejecute en la misma terminal:</p></li>
+                        <li><p><b>Windows</b></p></li>
+                        <li><div>
+                                <ul class="art-2-ul-2">
+                                    <li><p>En la terminal, ingrese <u>main.exe</u></u></p></li>
+                                </ul>
+                            </div></li>
+                        <li><p></p></li>
+                        <li><p><b>Linux</b></p></li>
+                        <li><div>
+                                <ul class="art-2-ul-2">
+                                    <li><p>En la terminal, ingrese <u>./main</u></u></p></li>
+                                </ul>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
         </article>
+      </div>
 
         <nav class="lateral_visibility">
           <svg id="lateral_frame">
@@ -107,6 +243,7 @@
               <p id="lateral_text_2">Todos los derechos reservados</p>
           </div>
         </nav>
+        <script src="javascript/install.js"></script>
         <script src="javascript/lateral.js"></script>
     </body>
 </html>
