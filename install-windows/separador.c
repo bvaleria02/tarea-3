@@ -21,14 +21,12 @@
 
 #include <stdio.h>          // Librería estándar de entrada y salida
 #include <string.h>         // Utilizada para la función strlen, además de manejo de arreglos
-#include <termios.h>        // Utilizada para poner la terminal en un cierto modo para leer pulsaciones del teclado
+#include <conio.h>        // Utilizada para poner la terminal en un cierto modo para leer pulsaciones del teclado
 #include <stdlib.h>         // Librería estándar, utilizada para limpiar la pantalla
 #include "lib/libSeparador.h"
 
 #define clear() printf("\033[H\033[J")                    // Limpia la pantalla
 #define gotoxy(x,y) printf("\033[%d;%dH", (y), (x))       // Va a una cierta parte de la pantalla
-
-static struct termios old, current;                       // usado para obtener las teclas pulsadas
 
 void exportarResultados();
 
@@ -53,7 +51,7 @@ int main(){
 
                         // --------------- Precálculos  -------------------- //
 
-  clear();
+  system("cls");
   if (palabras == NULL){
     cuadrado("   EL archivo con palabras no ha sido encontrado   ", 3, 0);
     gotoxy(24, 14);
@@ -63,7 +61,7 @@ int main(){
     gotoxy(16, 24);
     printf("Presione una tecla para finalizar");
     getch();
-    clear();
+    system("cls");
     exit(0);
   };
                                                   // comentar para no generar archivos
@@ -127,6 +125,7 @@ int main(){
   imprimirPantalla(1, Letras, 0, 0);
   cuadrado("  Ingrese la cantidad de letras a filtrar  ", 3, 1);                    // Este codigo de acá solo resimprime la pantalla y crea cuadrados con texto o elecciones para ingreesar
   scanf("%d", &longitud[0]);
+  longitud[0]++;
   imprimirPantalla(2, Letras, longitud, 0);
   cuadrado(" Ingrese la regla para buscar ", 7, 3);
   regla = multipleEleccion(7);                                                      // Abre un diálogo de elección múltiple y se encarga de leer la entrada
@@ -219,7 +218,7 @@ void exportarResultados(FILE *contenedor, FILE *palabras){
   FILE *escritura = fopen(nombreArchivo, "wb+");
   fseek(contenedor, 0, SEEK_SET);
   fseek(escritura, 0, SEEK_SET);
-  clear();
+  system("cls");
   while(a == 0){
     fread(direccion, sizeof(int), 1, contenedor);
     if (direccion[0] == 0xFFFFFFFF) break;

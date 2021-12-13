@@ -8,20 +8,20 @@
 static char* eleccion[]  = {"Menor que          ", "Igual que          ", "Mayor que          ", "Menor o igual que  ", "Mayor o igual que  ", "Distinto que       ", "Todos              "};
 
 void imprimirPantalla (int estado, unsigned char Letras[12], int longitud[2], int regla){       // Refresca la pantalla. Disponde de distintos modos que cambian ligeramente los mensajes mostrados
-  clear();
-  printf("╔════════════════════ Busca Palabras v0.1 ════════════════════╗ ");                   // Crea el marco
+  system("cls");
+  printf("+==================== Busca Palabras v0.2 ====================+ ");                   // Crea el marco
   for (int i = 0; i < 7; i++) {
-    printf("\n║                                                             ║");
+    printf("\n|                                                             |");
   };
-  printf("\n╠═════════════════════════════════════════════════════════════╣");
+  printf("\n+=============================================================+");
   for (int i = 0; i < 2; i++) {
-    printf("\n║                                                             ║");
+    printf("\n|                                                             |");
   };
-  printf("\n╠═════════════════════════════════════════════════════════════╣");
+  printf("\n+=============================================================+");
   for (int i = 0; i < 22; i++) {
-    printf("\n║                                                             ║");
+    printf("\n|                                                             |");
   };
-  printf("\n╚═════════════════════════════════════════════════════════════╝ ");
+  printf("\n+=============================================================+ ");
   gotoxy(3, 2);
   printf("Letras  : ");                                                                         // Desde aquí, rellema con las etiquetas
   if (estado >= 1){
@@ -64,7 +64,7 @@ void imprimirPantalla (int estado, unsigned char Letras[12], int longitud[2], in
       printf("\033[0;36mPresione alguna tecla para comenzar");
     };
   gotoxy(3, 8);
-  printf("\033[0;30;47mB:\033[0;0m Búsqueda Nueva\t\033[0;30;47mX:\033[0;0m Salir");
+  printf("\033[0;30;47mB:\033[0;0m Busqueda Nueva\t\033[0;30;47mX:\033[0;0m Salir");
   gotoxy(1, 32);
   printf("\033[0;0;0m");
 }

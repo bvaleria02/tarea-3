@@ -23,37 +23,37 @@ void cuadrado(char *texto, int alto, int modo){                                 
     int x = (32 - ((longitud + 2) >> 1));
     int y = (15 - (alto >> 1));
     gotoxy(x, y);                                                               // Imprime el borde exterior
-    printf("┌");
+    printf("+");
     for (int i = 0; i < longitud + 2; i++) {
-      printf("─");
+      printf("-");
     };
-    printf("┐");
+    printf("+");
     for (int i = 0; i < 1; i++) {
       gotoxy(x, (y+i+1));
-      printf("│");
+      printf("|");
       for (int j = 0; j < longitud + 2; j++) {
         printf(" ");
       };
-      printf("│");
+      printf("|");
     };
 
     gotoxy(x, y + 2);
-    printf("│ %s │", texto);                                                    // Imprime el texto ingresado
+    printf("| %s |", texto);                                                    // Imprime el texto ingresado
 
     for (int i = 0; i < alto ; i++) {
       gotoxy(x, y + i + 3);
-      printf("│");
+      printf("|");
       for (int j = 0; j < longitud + 2; j++) {
         printf(" ");
       };
-      printf("│");
+      printf("|");
     };
     gotoxy(x, y + alto + 3);
-    printf("└");
+    printf("+");
     for (int i = 0; i < longitud + 2; i++) {
-      printf("─");
+      printf("-");
     };
-    printf("┘");
+    printf("+");
     switch(modo){                                                               // Rellena con diferentes cosas, dependiendo del modo
       case  0 : gotoxy(1, 32);
                 break;

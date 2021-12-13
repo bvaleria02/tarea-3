@@ -5,7 +5,6 @@
     void segundaPasada(FILE *palabras, FILE *contenedor, unsigned char letras[6], int largo);
     int __stringlength(char *text_string, int modo);
     void delay(int time);
-    char getch(void);
     void limites(unsigned char Letras[12], int direcciones[12], int limSuperior[12], FILE *separador);
     void primeraBusqueda(int direcciones[12], int limSuperior[12], int regla, int longitud, FILE *separador, FILE *contenedor, FILE *palabras);
     int filtroLongitud(FILE *palabras, int regla, int longitud, int locacion, FILE *separador);

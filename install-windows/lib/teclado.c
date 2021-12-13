@@ -1,5 +1,6 @@
 #include "libSeparador.h"
 #include <stdio.h>          // Librería estándar de entrada y salida
+#include <conio.h>
 
 char teclado (int modo){                                                        // Se encarga de leer el teclado, y devolver un número dependiendo de la tecla presionada. Posse varios modos, además
   unsigned int tecla = 0;
@@ -30,23 +31,18 @@ char teclado (int modo){                                                        
                       case  'S' : tecla = 2;
                                   a = 1;
                                   break;
-                      case  0xA : tecla = 0x7F;
+                      case  0xD : tecla = 0x7F;
                                   a = 1;
                                   break;
                       case  'X' : tecla = 0xFF;
                                   a = 1;
                                   break;
-                      case 0x1b : tecla = (tecla << 8) + getch();
-                                  tecla = (tecla << 8) + getch();
-                                  switch(tecla){
-                                        case 0x1b5b41 : tecla = 1;
-                                                        a = 1;
-                                                        break;
-                                        case 0x1b5b42 : tecla = 2;
-                                                        a = 1;
-                                                        break;;
-                                                      };
-                                                      break;
+                      case 0xE048 : tecla = 1;
+                                    a = 1;
+                                    break;
+                      case 0xE050 : tecla = 2;
+                                    a = 1;
+                                    break;
 
                       /*default   : a = 0;
                                   break;*/
@@ -77,23 +73,19 @@ char teclado (int modo){                                                        
                       case  'X' : tecla = 0xFF;
                                   a = 1;
                                   break;
-                      case 0x1b : tecla = (tecla << 8) + getch();
-                                  tecla = (tecla << 8) + getch();
-                                  switch(tecla){
-                                      case 0x1b5b41 : tecla = 1;
-                                                      a = 1;
-                                                      break;
-                                      case 0x1b5b42 : tecla = 2;
-                                                      a = 1;
-                                                      break;;
-                                      case 0x1b5b44 : tecla = 3;
-                                                      a = 1;
-                                                      break;
-                                      case 0x1b5b43 : tecla = 4;
-                                                      a = 1;
-                                                      break;
-                                                    };
-                                                    break;
+
+                      case 0xE048 : tecla = 1;
+                                    a = 1;
+                                    break;
+                      case 0xE050 : tecla = 2;
+                                    a = 1;
+                                    break;
+                      case 0xE04B : tecla = 3;
+                                    a = 1;
+                                    break;
+                      case 0xE04D : tecla = 4;
+                                    a = 1;
+                                    break;
                       default   : a = 0;
                                   break;
                       };

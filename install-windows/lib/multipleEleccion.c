@@ -1,6 +1,7 @@
 #include "libSeparador.h"
 #include <stdio.h>
 #include <stdlib.h>         // Librería estándar, utilizada para limpiar la pantalla
+#include <conio.h>
 
 #define clear() printf("\033[H\033[J")                    // Limpia la pantalla
 #define gotoxy(x,y) printf("\033[%d;%dH", (y), (x))       // Va a una cierta parte de la pantalla
