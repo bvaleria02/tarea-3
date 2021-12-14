@@ -222,9 +222,10 @@
 .wow{
   position: relative;
   width: 360px;
-  height: 400px;
+  height: 480px;
   background-image: url(../media/wow-bg.jpg);
-  background-size: 100%;
+  background-size: 125%;
+  background-clip: content-box;
   top: 0rem;
   margin-top: 4rem;
 }

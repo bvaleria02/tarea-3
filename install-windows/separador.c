@@ -15,6 +15,8 @@
 
 
 
+// Versión de Windows. v0.2.1
+
 
 // Definir variables utilizadas a lo largo del código
 

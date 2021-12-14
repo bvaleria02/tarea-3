@@ -1,22 +1,22 @@
 all:
 	echo Tarea 1/4: Crear objetos
-	gcc -c lib/busquedasPosteriores.c
+	gcc -c ../lib/busquedasPosteriores.c
 	gcc -c lib/cuadrado.c
-	gcc -c lib/delay.c
-	gcc -c lib/entradaLetras.c
-	gcc -c lib/filtroLongitud.c
-	gcc -c lib/generarArchivoPalabras.c
-	gcc -c lib/getch.c
+	gcc -c ../lib/delay.c
+	gcc -c ../lib/entradaLetras.c
+	gcc -c ../lib/filtroLongitud.c
+	gcc -c ../lib/generarArchivoPalabras.c
+	gcc -c ../lib/getch.c
 	gcc -c lib/imprimirPantalla.c
-	gcc -c lib/imprimirResultados.c
-	gcc -c lib/limites.c
+	gcc -c ../lib/imprimirResultados.c
+	gcc -c ../lib/limites.c
 	gcc -c lib/multipleEleccion.c
-	gcc -c lib/primeraBusqueda.c
-	gcc -c lib/segundaPasada.c
-	gcc -c lib/separarPalabrasPorLetra.c
-	gcc -c lib/stringLength.c
+	gcc -c ../lib/primeraBusqueda.c
+	gcc -c ../lib/segundaPasada.c
+	gcc -c ../lib/separarPalabrasPorLetra.c
+	gcc -c ../lib/stringLength.c
 	gcc -c lib/teclado.c
-	gcc -c lib/totalResultados.c
+	gcc -c ../lib/totalResultados.c
 	gcc -c separador.c
 	echo Objetos creados
 	echo Tarea 2/4: Compilar programa

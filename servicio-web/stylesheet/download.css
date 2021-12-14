@@ -1,0 +1,97 @@
+.article_main{
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  top: 4.5rem;
+}
+
+#article-1 {
+  position: relative;
+  background-color: var(--color-5);
+  height: 24rem;
+}
+
+#article-1 h2{
+  font-size: 48px;
+  font-family: var(--font-1);
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px black;
+}
+
+#article-1 p{
+  position: relative;
+  color: white;
+  width: 75%;
+  left: 12.5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: var(--font-3);
+  top: 3rem;
+  margin-bottom: 1rem;
+}
+
+#article-1 input{
+  position: relative;
+  width: 40%;
+  left: 30%;
+  height: 4rem;
+  top: 3rem;
+  background-color: var(--color-5);
+  border-color: var(--color-6);
+  transform: translateY(0px);
+  transition: background-color 0.4s ease;
+  transition: transform 0.5s ease;
+  transition: color 0.75s ease;
+}
+
+#article-2 {
+  margin-top: 4rem;
+  position: relative;
+  background-color: var(--color-5);
+  height: 12rem;
+}
+
+#article-2 p{
+  position: relative;
+  color: white;
+  width: 75%;
+  left: 12.5%;
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--font-3);
+  top: 1.5rem;
+}
+
+#article-2 input{
+  position: relative;
+  width: 60%;
+  left: 20%;
+  height: 4rem;
+  top: 3rem;
+  transform: translateY(0px);
+
+  background-color: var(--color-5);
+  border-color: var(--color-6);
+  transition: background-color 0.4s ease;
+  transition: color 0.75s ease;
+}
+
+#article-1 input, #article-2 input{
+  border-radius: 16px;
+  box-shadow: 0px 6px;
+}
+
+#article-1 input:hover, #article-2 input:hover{
+  background-color: var(--color-6);
+  color: var(--color-1);
+  transform: translateY(6px);
+  box-shadow: 0px 2px;nada
+}
+
+#article-1 input:active, #article-2 input:active{
+  background-color: var(--color-7);
+  color: var(--color-4);
+}
