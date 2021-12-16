@@ -1,0 +1,141 @@
+/* Variables de entorno*/
+
+:root{
+    --color-1: #5c62cf;
+    --color-2: #5572ca;
+    --color-3: #619ed8;
+    --color-4: #70cbde;
+    --color-5: #4f5d9e;
+    --color-6: #38416f;
+    --color-7: #332b4f;
+    --color-8: #35355a;
+
+    --font-1 : 'Oswald', sans-serif;
+    --font-2: 'Source Code Pro', monospace;
+    --font-3: 'PT Serif Caption', serif;
+}
+
+/* Clases generales*/
+
+* {
+  padding : 0px;
+  margin  : 0px;
+  box-sizing: border-box;
+}
+
+#aaaaa{
+  color: #00000000;
+}
+
+.bg-frame{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  z-index: 0;
+}
+
+#bg-1{position: relative; background-color: var(--color-4); width: 25%; transition: width 2.5s ease;}
+#bg-2{position: relative; background-color: var(--color-3); width: 25%; transition: width 2.5s ease-in-out;}
+#bg-3{position: relative; background-color: var(--color-2); width: 25%; transition: width 2.5s ease-in-out;}
+#bg-4{position: relative; background-color: var(--color-1); width: 25%; transition: width 2.5s ease;}
+
+#bg-3:active, #bg-2:active, #bg-4:active{
+  background-color: var(--color-5);
+  width: 2%;
+}
+
+.about-frame{
+  position: fixed;
+  width: 100%; height: 100%;
+  transition: transform 2.8s ease;
+  transform: translate(75%);
+}
+
+.about-frame-active{
+  transform: translate(0%);
+}
+
+ul{
+  position: fixed;
+  top: 2rem; left: 18rem;
+  z-index: 1;
+  list-style: none;
+  width: 100%;
+  height: 40rem;
+}
+
+ul li h1{
+  position: relative;
+  color: white;
+  font-family: var(--font-1);
+  font-size: 64px;
+  text-shadow: 4px 4px var(--color-6);
+  width: 17rem;
+}
+
+.info{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16rem 80rem;
+}
+
+
+.info div b{
+  background-color: #00000000;
+  border-color: #00000000;
+  color: var(--color-7);
+  font-size: 32px;
+  font-family: var(--font-3);
+  height: 36px;
+}
+
+.info div textarea{
+  background-color: #00000000;
+  border-color: #00000000;
+  color: white;
+  font-size: 32px;
+  font-family: var(--font-3);
+  min-height: 44px; max-height: 44px;
+  min-width: 70rem; max-width: 70rem;
+}
+
+.bottom-text-1{
+  position: fixed;
+  bottom: 2rem;
+}
+
+#about-bottom-text{
+  background-color: #00000000;
+  width: 45rem;
+  font-style: italic;
+  font-family: var(--font-2);
+  font-size: 12px;
+  color: var(--color-7);
+  border-width: 0px;
+  opacity: 0%;
+  transition: opacity 2s ease;
+}
+
+.contact-frame{
+  position: fixed;
+  width: 100%; height: 100%;
+  transition: transform 2.8s ease;
+  transform: translate(-200%);
+}
+
+.contact-frame-active{
+  transform: translate(-20%);
+}
+
+#table-1-1, #table-2-1, #table-3-1 #table-4-1, #table-5-1, #table-6-1{
+  height: 40rem;
+  transition: height 1s ease;
+}
+
+#table-1-2, #table-2-2, #table-3-2 #table-4-2, #table-5-2, #table-6-2{
+  height: 40rem;
+  transition: height 1s ease;
+}

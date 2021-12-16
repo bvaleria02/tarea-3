@@ -119,6 +119,7 @@
   top: 60rem;
 }
 
+
 .articles_sub h3{
   position: relative;
   color: white;
@@ -158,7 +159,7 @@
 }
 
 #article-2{
-  height: 38rem;
+  height: 75%;
 }
 
 .art-2-ul-1{
@@ -193,7 +194,7 @@
 }
 
 #article-3{
-  height: 34rem;
+  height: 75%;
 }
 
 .art-3-ul-1, .art-4-ul-1, .art-5-ul-1, .art-6-ul-1{
@@ -201,8 +202,16 @@
   margin-top: 4rem;
 }
 
+#article-4{
+  height: 65%;
+}
+
+#article-5{
+  height: 75%;
+}
+
 #article-6{
-  height: 34rem;
+  height: 90%;
 }
 
 .articles_sub u{
@@ -221,4 +230,21 @@
   border-width: 2px;
   border-radius: 8px;
   box-shadow: 1px 1px black;
+}
+
+.articles_sub kbd:hover{
+  background-color: #6F6F6F;
+  color: white;
+}
+
+.articles_sub u textarea{
+  position: relative;
+  background-color: #00000000;
+  color: white;
+  font-family: monospace;
+  min-height: 24px; max-height: 24px;
+  width: auto;
+  font-size: 20px;
+  border-width: 0px;
+  border-color: #2F2F2F00;
 }
