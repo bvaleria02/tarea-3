@@ -7,7 +7,7 @@
 <ul>
   <li><kbd>B:</kbd> Inicia una nueva búsqeuda de palabras</li>
   <li><kbd>X:</kbd> Termina la ejecución del programa</li>
-  <li><kbd>E:</kbd> Exposrta a un archivo de texto los resultados</li>
+  <li><kbd>E:</kbd> Exporta a un archivo de texto los resultados</li>
    <li><kbd>Enter:</kbd> Ingresa los valores que se le piden al usuario</li>
   <li><kbd>W o Up:</kbd> Mueve uno hacia adelante los resultados, o uno hacia arriba los menú</li>
   <li><kbd>S o Down:</kbd> Mueve uno hacia atrás los resultados, o uno hacia abajo los menú</li>
