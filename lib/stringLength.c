@@ -2,6 +2,16 @@
 #include <stdio.h>          // Librería estándar de entrada y salida
 
 int __stringlength(char *text_string, int modo){                                          // strlen no sirve cuanndo no se trata del dígito particular, esto resuelve ese problema y da soporte para toda la sarta de cosas raras que hay en cuanto palabras
+  /*
+  * Nombre de la función      : string length (longitud de la cadena).
+  * Tipo de función           : entero.
+  * Parámetros                : cadena de texto, puntero de cadena de texto - lugar desde donde se lee el texto para buscar su longitud.
+                                modo, variable entera - establece el modo por el cual detener la longitud.
+  * Dato de retorno           : entero, siendo este el largo de la cadena ingresada.
+  * Descripción de la función : Entrega la longitud de la cadena ingresada, pero a diferencia de strlen de string.h, este no se detiene al encontrar
+                                un espacio, y además dependiendo el modo, se detiene al encontrar solo un dígito terminador, así como no contar
+                                carácteres especiales.
+  */
     int a = 0;
     unsigned char b = 0;
     for (int i = 0; i < 63; i++) {                                              // Carga la palabra, y si detecta un término, deja de contar

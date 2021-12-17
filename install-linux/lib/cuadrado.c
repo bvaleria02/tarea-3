@@ -9,13 +9,22 @@
 static char* eleccion[]  = {"Menor que          ", "Igual que          ", "Mayor que          ", "Menor o igual que  ", "Mayor o igual que  ", "Distinto que       ", "Todos              "};
 
 void cuadrado(char *texto, int alto, int modo){                                 // Crea un cuadrado en el medio de la pantalla, encima de totalResultados
-                                                                                /* Modos:
-                                                                                      0: Mostrar solo texto
-                                                                                      1: Texto y cuadro de entrada
-                                                                                      2: Texto y elección sí/no
-                                                                                      3: Texto y elección múltiple
-                                                                                      4: Texto y créditos
-                                                                                */
+      /*
+      * Nombre de la función      : Cuadrado (crea cuadrados).
+      * Tipo de función           : ninguna (void).
+      * Parámetros                : "texto", arreglo de char - texto el cual se quiere imprimir por pantalla.
+                                    "alto", variable entera - el alto del rectángulo que se quiere imprimir.
+                                    "modo", varibale entera - define el modo por el cual imprimir ciertos elementos en la pantalla además del texto.
+      * Dato de retorno           : ninguno (void).
+      * Descripción de la función : Esta función refresca crea un cuadrado en el medio de la pantalla, con un texto que el mismo usuario puede elegir colocar.
+                                    Posee unos cuantos modos, los cuales definen qué será mostrado por pantalla además del texto.
+                                    Modos:
+                                          0: Mostrar solo texto
+                                          1: Texto y cuadro de entrada
+                                          2: Texto y elección sí/no
+                                          3: Texto y elección múltiple
+                                          4: Texto y créditos
+      */
     int longitud = __stringlength(texto, 1);                                               // Obtiene la longitud del texto, para calcular el tamaño del cuadro
     if (modo == 3){
         alto += 2;

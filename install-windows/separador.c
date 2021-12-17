@@ -72,10 +72,8 @@ int main(){
     cuadrado("Indice no encontrado", 3, 0);
     printf("%d", d);
     gotoxy(19, 23);
-    printf("Generando archivo, espere un momento");
-    getch();
+    printf("Presione una tecla para generar.");
     fseek(palabras, 0l, SEEK_SET);
-    //fseek(indice, 0l, SEEK_SET);
     generarArchivoPalabras(palabras, indice);
   };
   if (separador == NULL){
@@ -116,7 +114,6 @@ int main(){
       };
       entradaLetras(Letras);
       longitud[1] = __stringlength(Letras, 0);
-      getch();
       if (longitud[1] < 2){
           a = 2;
       } else {
@@ -141,7 +138,7 @@ int main(){
   };
 };
 
-  //segundaPasada(palabras, contenedor, Letras, longitud[1]);
+  //segundaPasada(palabras, contenedor, Letras, longitud[1]);                       // No descomentar a menos que haya problemas severos con la búsqueda.
   resultados = totalResultados(contenedor);                                         // Caclcula el total de resutltados obtenidos, leyendo del archivo
 
   while (a == 0){                                                                   // Bucle, ya que aquí el usuario puede moverse y desplazarse por los resultados
@@ -226,9 +223,7 @@ void exportarResultados(FILE *contenedor, FILE *palabras){
     if (direccion[0] == 0xFFFFFFFF) break;
     fseek(palabras, direccion[0], SEEK_SET);
     fread(buffer_ch, sizeof(unsigned char), 24, palabras);
-    // printf("%4x\n", direccion[0]);
     largo = __stringlength(buffer_ch, 2);
-    // printf(" %d\n", b);
     fwrite(buffer_ch, sizeof(unsigned char), largo, escritura);
     fwrite(&nl_char,sizeof(char),1,escritura);
   };

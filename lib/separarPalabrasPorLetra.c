@@ -3,6 +3,17 @@
 
 
 void separarPalabrasPorLetra(FILE *palabras, FILE *indice, FILE *separador){
+  /*
+  * Nombre de la función      : Separar Palabras por Letra.
+  * Tipo de función           : void.
+  * Parámetros                : palabras, archivo - lugar donde se leerán las palabras.
+                                indice, archivo - lugar donde están almacenados los punteros de las palabras.
+                                separador, archivo - lugar donde serán escritos los resutados de separar las palabras por letra.
+  * Dato de retorno           : ninguno (void).
+  * Descripción de la función : Genera uno de los archivos de cache que facilitan la búsqueda de las palabras, este estableciendo desde
+                                antes de la ejecución la separación por letra, además de poder definir los límites de búsqueda para mayor
+                                eficiencia.
+  */
   long int largo = 0;
   long int direccion = 0;
   unsigned char letra = 0;

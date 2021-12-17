@@ -2,6 +2,20 @@
 #include <stdio.h>
 
 void busquedasPosteriores (int j, int direcciones[12], int limSuperior[12], FILE *separador, FILE *contenedor, unsigned char Letras[12]){        // Para la segunda y tercera letra, y después
+          /*
+          * Nombre de la función      : Búsquedas Posteriores.
+          * Tipo de función           : void.
+          * Parámetros                : "j" de tipo int - Este es el número de la búsqueda, relacionado con el cracter a comparar.
+                                        direcciones, arreglo de tipo int - Establece desde dónde empezar a buscar para comparar letras.
+                                        limSuperior, arreglo de tipo int - Establece hasta dónde buscar cuando se comparar una letra.
+                                        separador, archivo - lugar donde están separadas las palabras por letra.
+                                        contenedr, archivo - lugar donde se leeran y almacenarán los resultados.
+                                        letras, arreglo de tipo char - letras cuales serán comparadas las palabras.
+          * Dato de retorno           : ninguno (void).
+          * Descripción de la función : Esta función compara los resultados obtenidos de la primera búsqueda, cuales están almacenados en un archivo
+          *                             con una letra. En caso de no encontrar similitud, sobreescribe ese valor con el siguiente. Si ya no hay nada
+          *                             más que comparar, pone una señal de término y retorna. 
+          */
     int posicion[2] = {0, 0};
     int punteroLetra[2];
     int a[1] = {0};

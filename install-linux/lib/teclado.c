@@ -2,6 +2,14 @@
 #include <stdio.h>          // Librería estándar de entrada y salida
 
 char teclado (int modo){                                                        // Se encarga de leer el teclado, y devolver un número dependiendo de la tecla presionada. Posse varios modos, además
+  /*
+  * Nombre de la función      : Teclado.
+  * Tipo de función           : char.
+  * Parámetros                : "modo" de tipo int - Establece cuáles teclas se espera que el usuario ingrese según un número.
+  * Dato de retorno           : Tecla pulsada.
+  * Descripción de la función : Esta función se encargará de leer entradas del teclado, y dependiendo del modo, relacionarlas con un
+                                número para la lógica del programa.
+  */
   unsigned int tecla = 0;
   int a = 0;
   int b = 0;

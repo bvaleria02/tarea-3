@@ -8,6 +8,14 @@
 static char* eleccion[]  = {"Menor que          ", "Igual que          ", "Mayor que          ", "Menor o igual que  ", "Mayor o igual que  ", "Distinto que       ", "Todos              "};
 
 int multipleEleccion(int cantidad){                                             // Gestiona las entradas de elecciones múltiples
+  /*
+  * Nombre de la función      : Múltiple Eleccion.
+  * Tipo de función           : entero.
+  * Parámetros                : "cantidad" de tipo int - Establece cuántas elecciones tiene el usuario para escoger de una lista.
+  * Dato de retorno           : Elección tomada.
+  * Descripción de la función : Esta función se encarga de manejar la lógica y destacar una opción cuando se llama a una lista de elecciones
+                                Como solo hay una, no tiene una varibale para selecionar el modo.
+  */
   int posicion = 0;
   int c = 0;
   char tecla = 0;

@@ -10,6 +10,16 @@ extern  int resultados;
 extern  FILE *palabras;
 
 void imprimirResultados (int posicionPantalla, FILE *contenedor, FILE *palabras, int resultados){                                     // Pone los 20 resultados seleccionados en la pantalla
+  /*
+  * Nombre de la función      : Imprimir Resultados.
+  * Tipo de función           : void.
+  * Parámetros                : posicionPantalla, entero - establece desde donde empezar a leer 20 resultados, dependiendo del movimiento de la pantalla.
+                                contenedor, archivo - establece cuales palabras poner en pantalla
+                                palabras, archivo - Establece desde donde leer las palabras.
+                                resultados, entero - utilizada para imprimir por pantalla la cantidad de resultados obtenidos.
+  * Dato de retorno           : ninguno (void).
+  * Descripción de la función : Esta función imprime por la pantalla 20 o menos resultados, seleccionados al desplazarse con el teclado.
+  */
     int puntero[1];
     unsigned char buffer_1[24];
     int a = 0;

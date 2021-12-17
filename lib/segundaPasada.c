@@ -2,7 +2,19 @@
 #include <stdio.h>          // Librería estándar de entrada y salida
 
 
-void segundaPasada (FILE *palabras, FILE *contenedor, unsigned char letras[6], int largo){      // Código no utilizado y que data de una versión anterior del programa. La segunda pasada para verificar no es necesaria en el nuevo
+void segundaPasada (FILE *palabras, FILE *contenedor, unsigned char letras[6], int largo){      // Código no utilizado y que data de una versión anterior del programa. La segunda pasada para verificar no es necesaria en el nuevo algoritmo
+  /*
+  * Nombre de la función      : Segunda Pasada.
+  * Tipo de función           : void.
+  * Parámetros                : palabras, archivo - lugar donde se leerán las palabras para corroborar que el filtro es correcto
+                                contenedr, archivo - lugar donde se leeran y almacenarán los resultados.
+                                letras, arreglo de char - almacena las letras con las cuales se comprobarán las palabras.
+                                largo, variable entera - largo de la palabra esperado
+  * Dato de retorno           : ninguno (void).
+  * Descripción de la función : Deprecado porque el nuevo algoritmo provee soporte para mayor cantidad de letras, además de
+                                ser más eficiente y efectivo. Servía en el pasado solo porque surgían errores al momento de
+                                comparar, y esto ayudaba a filtrar una segunda vez.
+  */
   char bufferPalabra[32];
   int flagLetras = 0;
   int direccionPalabra[1];

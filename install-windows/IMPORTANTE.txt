@@ -1,2 +1,3 @@
+La versión de Windows es hasta cierto punto funcional. Hay unos pequeños errores de los cuales los desarrolladores están al tanto y que se pueden encontrar en la página de proyectos del repositorio de Github. Favor de no reportar, a menos que sean nuevos o no estén incluidos.
 
-Este código aún necesita ser portado a Windows y no se debe compilar aún
+Porte del programa comprobado que funciona en Windows 10. Requiere de MinGW instalado.

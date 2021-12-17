@@ -4,6 +4,14 @@
 
 
 void entradaLetras(unsigned char Letras[12]){                                   // Recibe las letras, y las ordena, separando los espacios
+  /*
+  * Nombre de la función      : Entrada de Letras.
+  * Tipo de función           : void.
+  * Parámetros                : "letras", arreglo de tipo char - encargado de almacenar las letras que el usuario ingresa.
+  * Dato de retorno           : ninguno (void).
+  * Descripción de la función : Esta función lee el teclado y elimina los espacios, para dejar solo las letras almacenadas cuales después
+                                serán utilizadas para comparar.
+  */
   char buffer_1[25];
   int a = 0;
   int b = 0;

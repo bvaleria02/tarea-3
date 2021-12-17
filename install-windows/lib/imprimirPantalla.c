@@ -8,6 +8,17 @@
 static char* eleccion[]  = {"Menor que          ", "Igual que          ", "Mayor que          ", "Menor o igual que  ", "Mayor o igual que  ", "Distinto que       ", "Todos              "};
 
 void imprimirPantalla (int estado, unsigned char Letras[12], int longitud[2], int regla){       // Refresca la pantalla. Disponde de distintos modos que cambian ligeramente los mensajes mostrados
+  /*
+  * Nombre de la función      : Imprimir Pantalla.
+  * Tipo de función           : ninguna (void).
+  * Parámetros                : "estado", variable de tipo entero - establece qué elementos imprimir por pantalla, y cuales ocultar
+                                "letras", arreglo de char - Las letras que el usuario está comparando, para imprimirlas por pantalla.
+                                "longitud", varibale entera ()solo se usa el [0] - Longitud de la palabra que se imprime por pantalla
+                                "regla", variable entera - el tipo de filtro por longitud escogido.
+  * Dato de retorno           : ninguno (void).
+  * Descripción de la función : Esta función refresca la pantalla cada vez que es llamada, siendo posible tener varios modos por los cuales
+                                muestra ciertos elementos.
+  */
   system("cls");
   printf("+==================== Busca Palabras v0.2 ====================+ ");                   // Crea el marco
   for (int i = 0; i < 7; i++) {

@@ -3,6 +3,18 @@
 #include <stdlib.h>         // Librería estándar, utilizada para limpiar la pantalla
 
 int filtroLongitud (FILE *palabras, int regla, int longitud, int locacion, FILE *separador){   // Con el modo dado, este retorna un 1 si es correcta la longitud a los parámetros
+  /*
+  * Nombre de la función      : Filtro por Longitud.
+  * Tipo de función           : int.
+  * Parámetros                : palabras, archivo - Establece desde donde leer las palabras.
+                                regla, varibale entera - Provee del tipo de regla por la cual filtrar las palabras.
+                                longitud, variable entera - provee al filtro un número al cual comparar.
+                                locacion, variable entera a modo de puntero - Provee desde dónde leer la palabra.
+                                separador, archivo - este archivo se utiliza al contener una tabla con las direcciones en el archivo palabras.
+  * Dato de retorno           : 1 o 0, dependiendo si la palabra cumple con el filtro.
+  * Descripción de la función : Esta función lee el teclado y elimina los espacios, para dejar solo las letras almacenadas cuales después
+                                serán utilizadas para comparar.
+  */
   unsigned char buffer_1[20];
   int largo = 0;
   int a = 0;
