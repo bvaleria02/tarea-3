@@ -107,15 +107,27 @@ article div p{
 
 #slider_image_1{
   transition: width 1s ease;
+  min-height: 20rem;
+  max-height: 20rem;
+  position: absolute;
 }
 #slider_image_2{
   transition: width 1s ease;
+  min-height: 20rem;
+  max-height: 20rem;
+  position: absolute;
 }
 #slider_image_3{
   transition: width 1s ease;
+  min-height: 20rem;
+  max-height: 20rem;
+  position: absolute;
 }
 #slider_image_4{
   transition: width 1s ease;
+  min-height: 20rem;
+  max-height: 20rem;
+  position: absolute;
 }
 
 /* Primer cuadro */

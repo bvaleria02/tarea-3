@@ -110,13 +110,13 @@ function sliderRight(position){
 function changeText(input){
   let stringInput;
   switch (input) {
-    case 0  : stringInput = "Marianeke";
+    case 0  : stringInput = "Separación de palabras";
               break;
-    case 1  : stringInput = "Comunismo";
+    case 1  : stringInput = "Múltiples filtros";
               break;
-    case 2  : stringInput = "Kastigo";
+    case 2  : stringInput = "Exportar a un archivo";
               break;
-    case 3  : stringInput = "Planilla 1";
+    case 3  : stringInput = "Modularidad";
               break;
   };
   document.querySelector("#slider_text-bottom").textContent = stringInput;

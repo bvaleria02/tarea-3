@@ -124,7 +124,7 @@ int main(){
   imprimirPantalla(1, Letras, 0, 0);
   cuadrado("  Ingrese la cantidad de letras a filtrar  ", 3, 1);                    // Este codigo de acá solo resimprime la pantalla y crea cuadrados con texto o elecciones para ingreesar
   scanf("%d", &longitud[0]);
-  longitud[0]++;
+  // longitud[0]++;
   imprimirPantalla(2, Letras, longitud, 0);
   cuadrado(" Ingrese la regla para buscar ", 7, 3);
   regla = multipleEleccion(7);                                                      // Abre un diálogo de elección múltiple y se encarga de leer la entrada
